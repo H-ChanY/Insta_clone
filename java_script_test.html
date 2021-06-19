@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introduction-HeoChanYong</title>
+    <meta charset="utf-8">
+
+    <style>
+
+/*
+id =100
+class =10
+tag=1 점으로 우선순위를 매긴다. 예시임.
+*/        
+        .box{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        .box.on{
+            /*box랑 on 함께 있어야함*/
+            background: green;
+        }
+    </style>
+
+</head>
+ <div class="box on"></div>
+
+
+<script>
+
+    const userName= "착한 호랑이";// 자바스크립트는 인터프리터 언어임.
+    const age= 43;
+    const married =false;
+    console.log(typeof userName);
+    console.log(typeof age);
+    console.log(typeof married);
+
+
+    console.log(2*3);
+    console.log(userName==='나쁜 호랑이');
+    console.log(userName==='착한 호랑이');// 자바스크립트는 비교연산자가 === 3개임     
+    console.log(age<30);
+
+// 조건문
+    if(userName==='착한호랑이'){
+        console.log("정답");
+    }else{
+        console.log('오답');
+    }
+
+    if(userName === '어벙한 호랑이'){
+        console.log("안녕 난 어벙한 호랑이야");
+    }
+    else if(userName==='멍청한 호랑이'){
+        console.log('안녕 난 멍청한 호랑이야');
+    }
+    else if(userName==='착한 호랑이'){
+        console.log('안녕 난 착한 호랑이야');
+    }else{
+        console.log("안녕 난 나쁜 호랑이야");
+    }
+
+// 반복문
+    for(let i =0;i<100; i++){
+       //  console.log(i+"번이야");
+    }
+
+// 선택자
+    // document.getElementsByClassName('box');
+    // const box= document.querySelectorAll('.box');
+    const box= document.querySelector('.box');// class는 . id는 # 쓰면 됨  변수에 담아 쓰는게 좋음
+
+    console.log(box);
+    
+    box.addEventListener('click',function(){
+        // box.style.background ="blue";
+        //box.classList.add('on');
+        //box.classList.remove('on');
+        box.classList.toggle('on');
+    });
+    
+
+</script>
+
+<body>
+ 
+    
+</body>
+</html>
