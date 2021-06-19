@@ -286,6 +286,11 @@ body{
     cursor: pointer;
 }
 
+.heart_btn.on .sprite_heart_icon_outline{
+    background: url('../imgs/background01.png') no-repeat -26px -261px;
+
+}
+
 .contents .likes{
     padding: 5px 20px;
     color: #262626;
@@ -487,6 +492,7 @@ body{
         width: 97.5%;
     }
 
+    
     #main_container{
         padding-top:220px;
     }
@@ -505,10 +511,17 @@ body{
         align-items: center;
     }
 
+    .hidden_menu{
+        display: block;
+    }
+
 }
 
 @media screen and (max-width:650px){
     #header .search_box{
         display:none;
+    }
+    .hidden_menu{
+        width: 95%;
     }
 }
