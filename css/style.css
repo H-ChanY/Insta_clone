@@ -294,7 +294,6 @@ body{
 
 .contents .sprite_more_icon.on .toggle_box{
     display: block;
-    position: relative;
 }
 
 .contents .toggle_box {
@@ -304,6 +303,7 @@ body{
     top: 20px;
     border: 1px solid rgba(0,0,0,0.09);
     border-radius: 3px;
+    display: none;
 }
 
 .contents .toggle_box >li{
