@@ -55,6 +55,7 @@ function delegationFunc(e){
             },
             error:function(request,status,error){
                 alert('로그인이 필요합니다.');
+<<<<<<< HEAD
                 window.location.replace('https://www.naver.com');
             }
         })
@@ -67,6 +68,12 @@ function delegationFunc(e){
             alert("댓글은 최대 140자 입력 가능합니다. 현재 글자수 : " + content.length);
             return;
         }
+=======
+                window.location.replace('https://www.naver.com')
+            }
+        })
+    }else if(elem.matches('[data-name="share"]')){
+>>>>>>> 332da1545d497d907a7107cbdca931e5badefcef
 
         $.ajax({
             type:'POST',
