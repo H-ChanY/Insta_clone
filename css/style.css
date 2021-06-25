@@ -32,7 +32,10 @@
     width: 24px;
     height: 22px;
 }
+.sprite_heart_icon_outline.on{
+    background: url('../imgs/background01.png') no-repeat -26px -261px;
 
+}
 .sprite_small_search_icon {
     display: inline-block;
     background: url('../imgs/background01.png') no-repeat -337px -246px;
@@ -275,12 +278,43 @@ body{
     width: 100%;
 }
 
+
+
 .contents .top .user_container{
     display:flex;
 }
 
 .contents .img_section{
     overflow: hidden;
+}
+
+.contents .sprite_more_icon{
+    position: relative;
+}
+
+.contents .sprite_more_icon.on .toggle_box{
+    display: block;
+    position: relative;
+}
+
+.contents .toggle_box {
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 3px;
+}
+
+.contents .toggle_box >li{
+    padding: 5px 10px;
+    background: #fff;
+    
+}
+
+.contents .toggle_box >li input{
+    border: none;
+    font-size: inherit;
 }
 
 .contents .img_section img{
@@ -307,10 +341,7 @@ body{
     cursor: pointer;
 }
 
-.sprite_heart_icon_outline.on{
-    background: url('../imgs/background01.png') no-repeat -26px -261px;
 
-}
 
 .contents .likes{
     padding: 5px 20px;
@@ -326,8 +357,13 @@ body{
 
 .contents .comment_container .comment{
     display: flex;
+    flex-direction: column;
     font-size: 14px;
 
+}
+
+.contents .comment_container .comment-detail{
+    display: flex;
 }
 
 .contents .comment_container .comment .nick_name{
@@ -369,7 +405,7 @@ body{
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    pointer-events: none;
+    /*pointer-events: none;*/
     opacity: 0.6;
 }
 
