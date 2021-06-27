@@ -10,6 +10,7 @@ from d.views import indexD
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',index),
+    path('sample/',sample),
     path('testtest/',test),
     path('aa/',indexA),
     path('bb/',indexB),

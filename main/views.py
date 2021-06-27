@@ -13,3 +13,6 @@ def test(request):
     return JsonResponse(d)
     
 
+def sample(request):
+    d={'name':'hojun','age':10}
+    return render(request,'sample.html')
