@@ -7,4 +7,4 @@ class Notice(models.Model):
     contents = models.TextField()
 
     def __str__(self):
-        return f'{self.title} !!! {self.likeCount}'
+        return f'제목:{self.title}, 좋아요수:{self.likeCount}, 조회수:{self.viewCount}'

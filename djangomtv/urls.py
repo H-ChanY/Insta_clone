@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from main.views import index, test
+from main.views import index, test, sample
 from a.views import indexA
 from b.views import indexB
 from c.views import indexC

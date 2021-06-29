@@ -1,0 +1,42 @@
+<h1>{{ value }}</h1>
+<p>{{value.2.title}}</p>
+
+{% for i in value %}
+    <h1>{{ forloop.counter0 }}-{{ i.title }}</h1>
+    <p>{{ i.contents }}</p>
+    <p>{{ i.viewCount }}</p>
+    {% if i.viewCount > 7 %}
+        <p>뷰수가 많습니다.</p>
+    {% elif i.viewCount > 5 %}
+        <p>콘텐츠가 반응을 보이고 있습니다.</p>
+    {% else %}
+        <p>콘텐츠 홍보를 더 하셔야합니다. </p>
+    {% endif %}
+{% endfor %}
+
+{% with value='hello world' %}
+<h1>{{ value }}</h1>
+{% endwith %}
+
+{% load %}
+
+{# hello world 주석입니다.#}
+{% comment '주석' %}
+{% for i in value %}
+    <h1>{{ forloop.counter0 }}-{{ i.title }}</h1>
+    <p>{{ i.contents }}</p>
+    <p>{{ i.viewCount }}</p>
+    {% if i.viewCount > 7 %}
+        <p>뷰수가 많습니다.</p>
+    {% elif i.viewCount > 5 %}
+        <p>콘텐츠가 반응을 보이고 있습니다.</p>
+    {% else %}
+        <p>콘텐츠 홍보를 더 하셔야합니다. </p>
+    {% endif %}
+{% endfor %}
+<p>hello world !!!! 여러줄 주석</p>
+{% endcomment%}
+
+{% lorem 3 p %}
+
+It is {% now "jS F Y H:i" %}
