@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>hello world B</h1>
+        {{blog.title}}
+        {{blog.contents}}
+        
+    {% if blog.img %}
+        <img src="{{blog.img.url}}",height="200px">
+    {% endif %}
+</body>
+</html>
