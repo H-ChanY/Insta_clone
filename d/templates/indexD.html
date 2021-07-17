@@ -6,5 +6,19 @@
 </head>
 <body>
     <h1>hello world D</h1>
+
+    {% if user.is_authenticated %}
+        <p>로그인 된 유저 :{{ user }}</p>
+        <a href="/dd/logout/">로그아웃</a>
+    {% else %}
+        <a href="/dd/signup/">회원 가입</a>
+        <a href="/dd/login/">로그인</a>
+    {% endif %}
+    
+    
+    
+    
+    
+    
 </body>
 </html>
